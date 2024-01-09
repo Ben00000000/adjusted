@@ -476,7 +476,7 @@ this.physics.add.overlap(player, [redbouncyenemy1, redbouncyenemy2, redbouncyene
   this.anims.create({
         key: 'jump',
         frames: this.anims.generateFrameNumbers('jumpdude', { start: 0, end: 14, first: 0 }),
-        frameRate: 20,
+        frameRate: 22,
         repeat: -1  // Set repeat to -1 for continuous looping
     });
 
@@ -801,7 +801,7 @@ jumpButton.y = this.cameras.main.worldView.bottom - 100;
 
      if (player.body.velocity.y > 0) {
             // Increase gravity when the player is falling
-            player.body.gravity.y = 5000; // You can adjust the gravity value as needed
+            player.body.gravity.y = 10000; // You can adjust the gravity value as needed
         } else {
             // Reset gravity to the default value when the player is not falling
             player.body.gravity.y = 250;
